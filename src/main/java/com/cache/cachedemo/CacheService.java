@@ -8,12 +8,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 @CacheConfig(cacheNames = "cache")
-public class CacheService implements CacheDemo {
+public class CacheService {
 
     public static final Logger LOGGER = LoggerFactory.getLogger(CacheService.class);
 
     @Cacheable
-    @Override
     public String getImageId(Integer imageId) {
         LOGGER.info(">>>>>>>>>>>> TEST");
         return imageId.toString();
