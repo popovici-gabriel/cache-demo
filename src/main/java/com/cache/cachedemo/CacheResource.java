@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/image")
 public class CacheResource {
 
-    private final CacheService cacheService;
+    private final CacheDemo cacheDemo;
 
     static final String IMAGE_ID_PARAM = "imageId";
 
@@ -19,12 +19,12 @@ public class CacheResource {
 
     @Autowired
     public CacheResource(CacheService cacheService) {
-        this.cacheService = cacheService;
+        this.cacheDemo = cacheService;
     }
 
     @GetMapping(value = IMAGE_ID_PATH)
     public String get(@PathVariable(name = IMAGE_ID_PARAM) Integer imageId) {
-        return cacheService.getImageId(imageId);
+        return cacheDemo.getImageId(imageId);
     }
 
 }
