@@ -18,8 +18,8 @@ public class CacheResource {
     static final String IMAGE_ID_PATH = "/{" + IMAGE_ID_PARAM + "}";
 
     @Autowired
-    public CacheResource(CacheService cacheService) {
-        this.cacheDemo = cacheService;
+    public CacheResource(CacheDemo cacheDemo) {
+        this.cacheDemo = cacheDemo;
     }
 
     @GetMapping(value = IMAGE_ID_PATH)
