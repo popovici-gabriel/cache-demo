@@ -1,7 +1,7 @@
 # cache-demo
 quick redis cache demo
 
-{code}
+```
 When run this is what I see
 localhost:9096/actuator/beans
 
@@ -58,5 +58,5 @@ When doing curl --location --request GET 'localhost:9096/image/1' few times
 2021-10-20 11:27:43.271  INFO 12145 --- [r-http-epoll-11] com.cache.cachedemo.CacheService         : >>>>>>>>>>>> TEST
 
 
-{code}
+```
 
